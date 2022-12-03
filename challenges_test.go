@@ -13,3 +13,11 @@ func TestC1P1(t *testing.T) {
 func TestC1P2(t *testing.T) {
 	fmt.Println("C1P2: ", challenges.Challenge1Part2("./inputs/1.txt"))
 }
+
+func TestC2P1(t *testing.T) {
+	fmt.Println("C2P1:", challenges.Challenge2Part1("./inputs/2.txt"))
+}
+
+func TestC2P2(t *testing.T) {
+	fmt.Println("C2P2: ", challenges.Challenge2Part2("./inputs/2.txt"))
+}
