@@ -26,7 +26,7 @@ func TestC1P2(t *testing.T) {
 	}
 
 	fmt.Println("C1P2:", result)
-	fmt.Println("")
+	fmt.Println("==============")
 }
 
 func TestC2P1(t *testing.T) {
@@ -49,7 +49,7 @@ func TestC2P2(t *testing.T) {
 	}
 
 	fmt.Println("C2P2:", result)
-	fmt.Println("")
+	fmt.Println("==============")
 
 }
 
@@ -73,5 +73,5 @@ func TestC3P2(t *testing.T) {
 	}
 
 	fmt.Println("C3P2:", result)
-	fmt.Println("")
+	fmt.Println("==============")
 }
