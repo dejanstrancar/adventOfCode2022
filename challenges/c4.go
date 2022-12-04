@@ -13,22 +13,22 @@ func parseInput(input string) (int, int, int, int) {
 	interval1 := strings.Split(values[0], "-")
 	interval2 := strings.Split(values[1], "-")
 
-	x1, _ := strconv.Atoi(interval1[0])
-	y1, _ := strconv.Atoi(interval1[1])
+	s1, _ := strconv.Atoi(interval1[0])
+	f1, _ := strconv.Atoi(interval1[1])
 
-	x2, _ := strconv.Atoi(interval2[0])
-	y2, _ := strconv.Atoi(interval2[1])
+	s2, _ := strconv.Atoi(interval2[0])
+	f2, _ := strconv.Atoi(interval2[1])
 
-	return x1, y1, x2, y2
+	return s1, f1, s2, f2
 }
 
 func fullyCover(input string) bool {
-	x1, y1, x2, y2 := parseInput(input)
-	if x1 >= x2 && y1 <= y2 {
+	s1, f1, s2, f2 := parseInput(input)
+	if s1 >= s2 && f1 <= f2 {
 		return true
 	}
 
-	if x2 >= x1 && y2 <= y1 {
+	if s2 >= s1 && f2 <= f1 {
 		return true
 	}
 
@@ -36,8 +36,8 @@ func fullyCover(input string) bool {
 }
 
 func overlapping(input string) bool {
-	x1, y1, x2, y2 := parseInput(input)
-	return !(y1 < x2 || y2 < x1)
+	s1, f1, s2, f2 := parseInput(input)
+	return !(f1 < s2 || f2 < s1)
 }
 
 func Challenge4Part1(inputFile string) int {
