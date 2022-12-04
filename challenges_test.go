@@ -75,3 +75,26 @@ func TestC3P2(t *testing.T) {
 	fmt.Println("C3P2:", result)
 	fmt.Println("==============")
 }
+
+func TestC4P1(t *testing.T) {
+	result := challenges.Challenge4Part1("./inputs/4.txt")
+	solution := 500
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C4P1:", result)
+}
+
+func TestC4P2(t *testing.T) {
+	result := challenges.Challenge4Part2("./inputs/4.txt")
+	solution := 815
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C4P2:", result)
+	fmt.Println("==============")
+}
