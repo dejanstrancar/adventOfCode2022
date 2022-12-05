@@ -22,11 +22,11 @@ func (s *Stack) pop() (c string) {
 	return
 }
 
-func (s *Stack) pushStack(c []string) {
+func (s *Stack) pushBulk(c []string) {
 	*s = append(*s, c...)
 }
 
-func (s *Stack) popStack(n int) (c []string) {
+func (s *Stack) popBulk(n int) (c []string) {
 	c = (*s)[len(*s)-n : len(*s)]
 	*s = (*s)[:len(*s)-n]
 	return
@@ -90,8 +90,8 @@ func Challenge5Part2(inputFile string) (result string) {
 
 	for sc.Scan() {
 		element, from, to := readInstructions(sc)
-		crates := positions[from-1].popStack(element)
-		positions[to-1].pushStack(crates)
+		crates := positions[from-1].popBulk(element)
+		positions[to-1].pushBulk(crates)
 	}
 
 	for _, c := range positions {
