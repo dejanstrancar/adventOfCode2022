@@ -98,3 +98,26 @@ func TestC4P2(t *testing.T) {
 	fmt.Println("C4P2:", result)
 	fmt.Println("==============")
 }
+
+func TestC5P1(t *testing.T) {
+	result := challenges.Challenge5Part1("./inputs/5.txt")
+	solution := "GRTSWNJHH"
+
+	if result != solution {
+		t.Fatalf("Not expected. %s != %s", result, solution)
+	}
+
+	fmt.Println("C5P1:", result)
+}
+
+func TestC5P2(t *testing.T) {
+	result := challenges.Challenge5Part2("./inputs/5.txt")
+	solution := "QLFQDBBHM"
+
+	if result != solution {
+		t.Fatalf("Not expected. %s != %s", result, solution)
+	}
+
+	fmt.Println("C5P2:", result)
+	fmt.Println("==============")
+}
