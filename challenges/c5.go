@@ -65,10 +65,10 @@ func Challenge5Part1(inputFile string) (result string) {
 	readPositions(sc, positions)
 
 	for sc.Scan() {
-		element, from, to := readInstructions(sc)
-		for i := 0; i < element; i++ {
-			crate := positions[from-1].pop()
-			positions[to-1].push(crate)
+		crate, from, to := readInstructions(sc)
+		for i := 0; i < crate; i++ {
+			load := positions[from-1].pop()
+			positions[to-1].push(load)
 		}
 	}
 
@@ -89,8 +89,8 @@ func Challenge5Part2(inputFile string) (result string) {
 	readPositions(sc, positions)
 
 	for sc.Scan() {
-		element, from, to := readInstructions(sc)
-		crates := positions[from-1].popBulk(element)
+		crate, from, to := readInstructions(sc)
+		crates := positions[from-1].popBulk(crate)
 		positions[to-1].pushBulk(crates)
 	}
 
