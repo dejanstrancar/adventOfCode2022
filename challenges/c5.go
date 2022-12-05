@@ -47,6 +47,7 @@ func readPositions(sc *bufio.Scanner, positions []Stack) {
 		processInitial(sc.Text(), positions)
 		sc.Scan()
 	}
+	sc.Scan() //empty line
 }
 
 func readInstructions(sc *bufio.Scanner) (element int, from int, to int) {
@@ -62,8 +63,6 @@ func Challenge5Part1(inputFile string) (result string) {
 	sc := bufio.NewScanner(input)
 
 	readPositions(sc, positions)
-
-	sc.Scan() //empty line
 
 	for sc.Scan() {
 		element, from, to := readInstructions(sc)
@@ -88,8 +87,6 @@ func Challenge5Part2(inputFile string) (result string) {
 	sc := bufio.NewScanner(input)
 
 	readPositions(sc, positions)
-
-	sc.Scan() //empty line
 
 	for sc.Scan() {
 		element, from, to := readInstructions(sc)
