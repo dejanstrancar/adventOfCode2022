@@ -6,35 +6,33 @@ import (
 	"os"
 )
 
-type stack struct {
-	elements []string
+type Stack []string
+
+func (s *Stack) append(c string) {
+	*s = append([]string{c}, *s...)
 }
 
-func (s *stack) append(c string) {
-	s.elements = append([]string{c}, s.elements...)
+func (s *Stack) push(c string) {
+	*s = append(*s, c)
 }
 
-func (s *stack) push(c string) {
-	s.elements = append(s.elements, c)
-}
-
-func (s *stack) pop() (c string) {
-	c = s.elements[len(s.elements)-1]
-	s.elements = s.elements[:len(s.elements)-1]
+func (s *Stack) pop() (c string) {
+	c = (*s)[len(*s)-1]
+	*s = (*s)[:len(*s)-1]
 	return
 }
 
-func (s *stack) pushStack(c []string) {
-	s.elements = append(s.elements, c...)
+func (s *Stack) pushStack(c []string) {
+	*s = append(*s, c...)
 }
 
-func (s *stack) popStack(n int) (c []string) {
-	c = s.elements[len(s.elements)-n : len(s.elements)]
-	s.elements = s.elements[:len(s.elements)-n]
+func (s *Stack) popStack(n int) (c []string) {
+	c = (*s)[len(*s)-n : len(*s)]
+	*s = (*s)[:len(*s)-n]
 	return
 }
 
-func processInitial(input string, positions []stack) {
+func processInitial(input string, positions []Stack) {
 	for index, char := range input {
 		char := string(char)
 		if char != "[" && char != "]" && char != " " {
@@ -43,7 +41,7 @@ func processInitial(input string, positions []stack) {
 	}
 }
 
-func readPositions(sc *bufio.Scanner, positions []stack) {
+func readPositions(sc *bufio.Scanner, positions []Stack) {
 	sc.Scan()
 	for sc.Text() != " 1   2   3   4   5   6   7   8   9 " {
 		processInitial(sc.Text(), positions)
@@ -59,7 +57,7 @@ func readInstructions(sc *bufio.Scanner) (element int, from int, to int) {
 func Challenge5Part1(inputFile string) (result string) {
 	input, _ := os.Open(inputFile)
 	defer input.Close()
-	var positions = make([]stack, 9)
+	var positions = make([]Stack, 9)
 
 	sc := bufio.NewScanner(input)
 
@@ -85,7 +83,7 @@ func Challenge5Part1(inputFile string) (result string) {
 func Challenge5Part2(inputFile string) (result string) {
 	input, _ := os.Open(inputFile)
 	defer input.Close()
-	var positions = make([]stack, 9)
+	var positions = make([]Stack, 9)
 
 	sc := bufio.NewScanner(input)
 
