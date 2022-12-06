@@ -135,7 +135,7 @@ func TestC6P1(t *testing.T) {
 
 func TestC6P2(t *testing.T) {
 	result := challenges.Challenge6Part2("./inputs/6.txt")
-	solution := 1
+	solution := 3774
 
 	if result != solution {
 		t.Fatalf("Not expected. %d != %d", result, solution)
