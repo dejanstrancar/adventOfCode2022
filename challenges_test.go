@@ -144,3 +144,26 @@ func TestC6P2(t *testing.T) {
 	fmt.Println("C6P2:", result)
 	fmt.Println("==============")
 }
+
+func TestC7P1(t *testing.T) {
+	result := challenges.Challenge7Part1("./inputs/7.txt")
+	solution := 1743217
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C7P1:", result)
+}
+
+func TestC7P2(t *testing.T) {
+	result := challenges.Challenge7Part2("./inputs/7.txt")
+	solution := 8319096
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C7P2:", result)
+	fmt.Println("==============")
+}
