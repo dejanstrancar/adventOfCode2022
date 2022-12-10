@@ -190,3 +190,73 @@ func TestC8P2(t *testing.T) {
 	fmt.Println("C8P2:", result)
 	fmt.Println("==============")
 }
+
+func TestC9P1(t *testing.T) {
+	result := challenges.Challenge9Part1("./inputs/9.txt")
+	solution := 6037
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C9P1:", result)
+}
+
+func TestC9P2(t *testing.T) {
+	result := challenges.Challenge9Part2("./inputs/9.txt")
+	solution := 2485
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C9P2:", result)
+	fmt.Println("==============")
+}
+
+// func TestC10P1(t *testing.T) {
+// 	result := challenges.Challenge10Part1("./inputs/10.txt")
+// 	solution := 1789
+
+// 	if result != solution {
+// 		t.Fatalf("Not expected. %d != %d", result, solution)
+// 	}
+
+// 	fmt.Println("C10P1:", result)
+// }
+
+// func TestC10P2(t *testing.T) {
+// 	result := challenges.Challenge10Part2("./inputs/10.txt")
+// 	solution := 314820
+
+// 	if result != solution {
+// 		t.Fatalf("Not expected. %d != %d", result, solution)
+// 	}
+
+// 	fmt.Println("C10P2:", result)
+// 	fmt.Println("==============")
+// }
+
+// Test placeholders
+
+// func TestC_P1(t *testing.T) {
+// 	result := challenges.Challenge_Part1("./inputs/_.txt")
+// 	solution := 0
+
+// 	if result != solution {
+// 		t.Fatalf("Not expected. %d != %d", result, solution)
+// 	}
+
+// 	fmt.Println("C_P1:", result)
+// }
+
+// func TestC_P2(t *testing.T) {
+// 	result := challenges.Challenge_Part2("./inputs/_.txt")
+// 	solution := 0
+
+// 	if result != solution {
+// 		t.Fatalf("Not expected. %d != %d", result, solution)
+// 	}
+
+// 	fmt.Println("C_P2:", result)
+// }
