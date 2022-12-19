@@ -151,22 +151,22 @@ func Challenge14Part2(inputFile string) int {
 
 	var sand int = 0
 	for {
-		newSand := point4{500, 0}
-		if cave[newSand] == 'o' {
+		nSand := point4{500, 0}
+		if cave[nSand] == 'o' {
 			break
 		}
 		for {
-			cave[newSand] = '"'
-			if cave[point4{newSand.x, newSand.y + 1}] < '#' {
-				newSand.y++
-			} else if cave[point4{newSand.x - 1, newSand.y + 1}] < '#' {
-				newSand.y++
-				newSand.x--
-			} else if cave[point4{newSand.x + 1, newSand.y + 1}] < '#' {
-				newSand.y++
-				newSand.x++
+			cave[nSand] = '"'
+			if cave[point4{nSand.x, nSand.y + 1}] < '#' {
+				nSand.y++
+			} else if cave[point4{nSand.x - 1, nSand.y + 1}] < '#' {
+				nSand.y++
+				nSand.x--
+			} else if cave[point4{nSand.x + 1, nSand.y + 1}] < '#' {
+				nSand.y++
+				nSand.x++
 			} else {
-				cave[newSand] = 'o'
+				cave[nSand] = 'o'
 				sand++
 				break
 			}

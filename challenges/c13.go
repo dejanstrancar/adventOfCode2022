@@ -17,7 +17,7 @@ func readTree(input string) tree {
 	root := tree{-1, []*tree{}, nil}
 	temp := &root
 
-	var currentNumber string
+	var current string
 	for _, r := range input {
 		switch r {
 		case '[':
@@ -25,24 +25,24 @@ func readTree(input string) tree {
 			temp.elements = append(temp.elements, &newTree)
 			temp = &newTree
 		case ']':
-			if len(currentNumber) > 0 {
-				number, _ := strconv.Atoi(currentNumber)
+			if len(current) > 0 {
+				number, _ := strconv.Atoi(current)
 				temp.valueLeaf = number
-				currentNumber = ""
+				current = ""
 			}
 			temp = temp.father
 		case ',':
-			if len(currentNumber) > 0 {
-				number, _ := strconv.Atoi(currentNumber)
+			if len(current) > 0 {
+				number, _ := strconv.Atoi(current)
 				temp.valueLeaf = number
-				currentNumber = ""
+				current = ""
 			}
 			temp = temp.father
 			newTree := tree{-1, []*tree{}, temp}
 			temp.elements = append(temp.elements, &newTree)
 			temp = &newTree
 		default:
-			currentNumber += string(r)
+			current += string(r)
 		}
 	}
 	return root

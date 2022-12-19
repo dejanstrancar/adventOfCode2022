@@ -46,7 +46,6 @@ func Challenge12Part1(inputFile string) int {
 
 		if currentPoint == end {
 			return distanceFromStart[end]
-			break
 		}
 
 		for _, near := range [][]int{{1, 0}, {0, -1}, {-1, 0}, {0, 1}} {
