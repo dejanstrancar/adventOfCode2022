@@ -348,7 +348,7 @@ func TestC15P2(t *testing.T) {
 
 func TestC16P1(t *testing.T) {
 	result := challenges.Challenge16Part1("./inputs/16.txt")
-	solution := 0
+	solution := 1741
 
 	if result != solution {
 		t.Fatalf("Not expected. %d != %d", result, solution)
@@ -359,7 +359,7 @@ func TestC16P1(t *testing.T) {
 
 func TestC16P2(t *testing.T) {
 	result := challenges.Challenge16Part2("./inputs/16.txt")
-	solution := 0
+	solution := 2316
 
 	if result != solution {
 		t.Fatalf("Not expected. %d != %d", result, solution)
@@ -370,7 +370,7 @@ func TestC16P2(t *testing.T) {
 
 func TestC17P1(t *testing.T) {
 	result := challenges.Challenge17Part1("./inputs/17.txt")
-	solution := 0
+	solution := 3130
 
 	if result != solution {
 		t.Fatalf("Not expected. %d != %d", result, solution)
@@ -381,7 +381,7 @@ func TestC17P1(t *testing.T) {
 
 func TestC17P2(t *testing.T) {
 	result := challenges.Challenge17Part2("./inputs/17.txt")
-	solution := 0
+	solution := 1556521739139
 
 	if result != solution {
 		t.Fatalf("Not expected. %d != %d", result, solution)
@@ -392,7 +392,7 @@ func TestC17P2(t *testing.T) {
 
 func TestC18P1(t *testing.T) {
 	result := challenges.Challenge18Part1("./inputs/18.txt")
-	solution := 0
+	solution := 4320
 
 	if result != solution {
 		t.Fatalf("Not expected. %d != %d", result, solution)
@@ -403,7 +403,7 @@ func TestC18P1(t *testing.T) {
 
 func TestC18P2(t *testing.T) {
 	result := challenges.Challenge18Part2("./inputs/18.txt")
-	solution := 0
+	solution := 2456
 
 	if result != solution {
 		t.Fatalf("Not expected. %d != %d", result, solution)
@@ -414,7 +414,7 @@ func TestC18P2(t *testing.T) {
 
 func TestC19P1(t *testing.T) {
 	result := challenges.Challenge19Part1("./inputs/19.txt")
-	solution := 0
+	solution := 1550
 
 	if result != solution {
 		t.Fatalf("Not expected. %d != %d", result, solution)
@@ -425,7 +425,7 @@ func TestC19P1(t *testing.T) {
 
 func TestC19P2(t *testing.T) {
 	result := challenges.Challenge19Part2("./inputs/19.txt")
-	solution := 0
+	solution := 18630
 
 	if result != solution {
 		t.Fatalf("Not expected. %d != %d", result, solution)
@@ -436,7 +436,7 @@ func TestC19P2(t *testing.T) {
 
 func TestC20P1(t *testing.T) {
 	result := challenges.Challenge20Part1("./inputs/20.txt")
-	solution := 0
+	solution := 2275
 
 	if result != solution {
 		t.Fatalf("Not expected. %d != %d", result, solution)
@@ -447,7 +447,7 @@ func TestC20P1(t *testing.T) {
 
 func TestC20P2(t *testing.T) {
 	result := challenges.Challenge20Part2("./inputs/20.txt")
-	solution := 0
+	solution := 4090409331120
 
 	if result != solution {
 		t.Fatalf("Not expected. %d != %d", result, solution)
@@ -458,7 +458,7 @@ func TestC20P2(t *testing.T) {
 
 func TestC21P1(t *testing.T) {
 	result := challenges.Challenge21Part1("./inputs/21.txt")
-	solution := 0
+	solution := 54703080378102
 
 	if result != solution {
 		t.Fatalf("Not expected. %d != %d", result, solution)
@@ -469,7 +469,7 @@ func TestC21P1(t *testing.T) {
 
 func TestC21P2(t *testing.T) {
 	result := challenges.Challenge21Part2("./inputs/21.txt")
-	solution := 0
+	solution := 3952673930912
 
 	if result != solution {
 		t.Fatalf("Not expected. %d != %d", result, solution)
@@ -480,7 +480,7 @@ func TestC21P2(t *testing.T) {
 
 func TestC22P1(t *testing.T) {
 	result := challenges.Challenge22Part1("./inputs/22.txt")
-	solution := 0
+	solution := 186128
 
 	if result != solution {
 		t.Fatalf("Not expected. %d != %d", result, solution)
@@ -491,7 +491,7 @@ func TestC22P1(t *testing.T) {
 
 func TestC22P2(t *testing.T) {
 	result := challenges.Challenge22Part2("./inputs/22.txt")
-	solution := 0
+	solution := 34426
 
 	if result != solution {
 		t.Fatalf("Not expected. %d != %d", result, solution)
@@ -502,7 +502,7 @@ func TestC22P2(t *testing.T) {
 
 func TestC23P1(t *testing.T) {
 	result := challenges.Challenge23Part1("./inputs/23.txt")
-	solution := 0
+	solution := 4109
 
 	if result != solution {
 		t.Fatalf("Not expected. %d != %d", result, solution)
@@ -513,7 +513,7 @@ func TestC23P1(t *testing.T) {
 
 func TestC23P2(t *testing.T) {
 	result := challenges.Challenge23Part2("./inputs/23.txt")
-	solution := 0
+	solution := 1055
 
 	if result != solution {
 		t.Fatalf("Not expected. %d != %d", result, solution)
@@ -524,7 +524,7 @@ func TestC23P2(t *testing.T) {
 
 func TestC24P1(t *testing.T) {
 	result := challenges.Challenge24Part1("./inputs/24.txt")
-	solution := 0
+	solution := 279
 
 	if result != solution {
 		t.Fatalf("Not expected. %d != %d", result, solution)
@@ -535,7 +535,7 @@ func TestC24P1(t *testing.T) {
 
 func TestC24P2(t *testing.T) {
 	result := challenges.Challenge24Part2("./inputs/24.txt")
-	solution := 0
+	solution := 762
 
 	if result != solution {
 		t.Fatalf("Not expected. %d != %d", result, solution)
@@ -546,22 +546,11 @@ func TestC24P2(t *testing.T) {
 
 func TestC25P1(t *testing.T) {
 	result := challenges.Challenge25Part1("./inputs/25.txt")
-	solution := 0
+	solution := "2-1-110-=01-1-0-0==2"
 
 	if result != solution {
 		t.Fatalf("Not expected. %d != %d", result, solution)
 	}
 
 	fmt.Println("C25P1:", result)
-}
-
-func TestC25P2(t *testing.T) {
-	result := challenges.Challenge25Part2("./inputs/25.txt")
-	solution := 0
-
-	if result != solution {
-		t.Fatalf("Not expected. %d != %d", result, solution)
-	}
-
-	fmt.Println("C25P2:", result)
 }
