@@ -346,26 +346,222 @@ func TestC15P2(t *testing.T) {
 	fmt.Println("C15P2:", result)
 }
 
-// Test placeholders
+func TestC16P1(t *testing.T) {
+	result := challenges.Challenge16Part1("./inputs/16.txt")
+	solution := 0
 
-// func TestC_P1(t *testing.T) {
-// 	result := challenges.Challenge_Part1("./inputs/_.txt")
-// 	solution := 0
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
 
-// 	if result != solution {
-// 		t.Fatalf("Not expected. %d != %d", result, solution)
-// 	}
+	fmt.Println("C16P1:", result)
+}
 
-// 	fmt.Println("C_P1:", result)
-// }
+func TestC16P2(t *testing.T) {
+	result := challenges.Challenge16Part2("./inputs/16.txt")
+	solution := 0
 
-// func TestC_P2(t *testing.T) {
-// 	result := challenges.Challenge_Part2("./inputs/_.txt")
-// 	solution := 0
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
 
-// 	if result != solution {
-// 		t.Fatalf("Not expected. %d != %d", result, solution)
-// 	}
+	fmt.Println("C16P2:", result)
+}
 
-// 	fmt.Println("C_P2:", result)
-// }
+func TestC17P1(t *testing.T) {
+	result := challenges.Challenge17Part1("./inputs/17.txt")
+	solution := 0
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C17P1:", result)
+}
+
+func TestC17P2(t *testing.T) {
+	result := challenges.Challenge17Part2("./inputs/17.txt")
+	solution := 0
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C17P2:", result)
+}
+
+func TestC18P1(t *testing.T) {
+	result := challenges.Challenge18Part1("./inputs/18.txt")
+	solution := 0
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C18P1:", result)
+}
+
+func TestC18P2(t *testing.T) {
+	result := challenges.Challenge18Part2("./inputs/18.txt")
+	solution := 0
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C18P2:", result)
+}
+
+func TestC19P1(t *testing.T) {
+	result := challenges.Challenge19Part1("./inputs/19.txt")
+	solution := 0
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C19P1:", result)
+}
+
+func TestC19P2(t *testing.T) {
+	result := challenges.Challenge19Part2("./inputs/19.txt")
+	solution := 0
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C19P2:", result)
+}
+
+func TestC20P1(t *testing.T) {
+	result := challenges.Challenge20Part1("./inputs/20.txt")
+	solution := 0
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C20P1:", result)
+}
+
+func TestC20P2(t *testing.T) {
+	result := challenges.Challenge20Part2("./inputs/20.txt")
+	solution := 0
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C20P2:", result)
+}
+
+func TestC21P1(t *testing.T) {
+	result := challenges.Challenge21Part1("./inputs/21.txt")
+	solution := 0
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C21P1:", result)
+}
+
+func TestC21P2(t *testing.T) {
+	result := challenges.Challenge21Part2("./inputs/21.txt")
+	solution := 0
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C21P2:", result)
+}
+
+func TestC22P1(t *testing.T) {
+	result := challenges.Challenge22Part1("./inputs/22.txt")
+	solution := 0
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C22P1:", result)
+}
+
+func TestC22P2(t *testing.T) {
+	result := challenges.Challenge22Part2("./inputs/22.txt")
+	solution := 0
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C22P2:", result)
+}
+
+func TestC23P1(t *testing.T) {
+	result := challenges.Challenge23Part1("./inputs/23.txt")
+	solution := 0
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C23P1:", result)
+}
+
+func TestC23P2(t *testing.T) {
+	result := challenges.Challenge23Part2("./inputs/23.txt")
+	solution := 0
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C23P2:", result)
+}
+
+func TestC24P1(t *testing.T) {
+	result := challenges.Challenge24Part1("./inputs/24.txt")
+	solution := 0
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C24P1:", result)
+}
+
+func TestC24P2(t *testing.T) {
+	result := challenges.Challenge24Part2("./inputs/24.txt")
+	solution := 0
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C24P2:", result)
+}
+
+func TestC25P1(t *testing.T) {
+	result := challenges.Challenge25Part1("./inputs/25.txt")
+	solution := 0
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C25P1:", result)
+}
+
+func TestC25P2(t *testing.T) {
+	result := challenges.Challenge25Part2("./inputs/25.txt")
+	solution := 0
+
+	if result != solution {
+		t.Fatalf("Not expected. %d != %d", result, solution)
+	}
+
+	fmt.Println("C25P2:", result)
+}
