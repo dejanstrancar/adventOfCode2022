@@ -381,7 +381,7 @@ func TestC17P1(t *testing.T) {
 
 func TestC17P2(t *testing.T) {
 	result := challenges.Challenge17Part2("./inputs/17.txt")
-	solution := 1556521739139
+	solution := 1568604651130
 
 	if result != solution {
 		t.Fatalf("Not expected. %d != %d", result, solution)

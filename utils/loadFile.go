@@ -18,3 +18,8 @@ func LoadFileToArray(filename string) []string {
 
 	return lines
 }
+
+func ReadRaw(filename string) string {
+	data, _ := os.ReadFile(filename)
+	return string(data)
+}
