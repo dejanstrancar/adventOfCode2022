@@ -549,7 +549,7 @@ func TestC25P1(t *testing.T) {
 	solution := "2-1-110-=01-1-0-0==2"
 
 	if result != solution {
-		t.Fatalf("Not expected. %d != %d", result, solution)
+		t.Fatalf("Not expected. %s != %s", result, solution)
 	}
 
 	fmt.Println("C25P1:", result)
